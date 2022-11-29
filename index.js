@@ -4,14 +4,13 @@ let countEl = document.getElementById("count-el")
 
 function increment() {
     count += 1
-    countEl.textContent = count
+    countEl.innerText = count
 }
 
 function save() {
-    let countStr = count + " - "
-    saveEl.textContenttStr
-    countEl.textContent = 0
+    let people = count + " - "
+    saveEl.innerText += people
+    countEl.innerText = 0
     count = 0
 }
 
-console.log("Let's count people on the subway!")
